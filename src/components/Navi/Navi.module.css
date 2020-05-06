@@ -1,0 +1,44 @@
+:root{
+    --navHeight: 6vh;
+    --tranTime: 200ms;
+    --navColor: rgb(12, 45, 59);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: var(--navHeight);
+    background-color: var(--navColor);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 10px -2px gray; 
+    text-decoration: none;
+    
+}
+
+.naviItem{
+    flex-grow: 1;
+    
+}   
+
+.about{
+    border-radius: 50px;
+    width: 1vh;
+    margin-right: 1vh;
+    transition: 200ms ease-in-out;
+}
+.about:hover{
+    background-color: rgb(17, 63, 83);
+}
+
+.navBuffer{
+    flex-grow: 4;
+}
+
+.navHeightBuffer{
+    min-height: var(--navHeight);
+    display: block;
+}
