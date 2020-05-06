@@ -8,22 +8,27 @@ function App() {
   return (
     <div>
         <nav >
-            <Link to="#">
+            
                 <div className={style.naviItem}>
-                    <h3>10 Pantry Raids</h3>
+                    <Link to="/10-pantryraids">
+                        <h3>10 Pantry Raids</h3>
+                    </Link>
                 </div>
-            </Link>
+            
+
                 <div className={style.navBuffer}></div>
             
                 <div className={style.naviItem}>
                     <p>Search Bar</p>
                 </div>
             
-            <Link to="#">
+            
                 <div className={cx(style.naviItem, style.about)}>
-                    <p>About</p>
+                    <Link to="/10-pantryraids/about">
+                        <p>About</p>
+                    </Link>
                 </div>
-            </Link>
+            
         </nav>
         <div className={style.navHeightBuffer} />
     </div>

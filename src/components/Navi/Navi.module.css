@@ -19,6 +19,11 @@ nav{
     
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .naviItem{
     flex-grow: 1;
     

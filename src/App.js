@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import {BrowserRouter as BRouter, Switch, Route} from 'react-router-dom';
 
-import {Navi, Cards} from './components';
+import {Navi, Cards, About} from './components';
+
 
 import './App.css';
 
@@ -8,10 +11,23 @@ class App extends React.Component{
 
   render(){
     return(
-      <div className="App">
-        <Navi />
-        <Cards />
-      </div>
+      <BRouter>
+        <div className="App">
+          <Navi />
+          <Switch>
+            <Route path="/10-pantryraids" exact>
+              <div>
+                <Cards />
+              </div>
+            </Route>
+            <Route path="/10-pantryraids/About">
+              <div>
+                <About />
+              </div>
+            </Route>
+          </Switch>
+        </div>
+      </BRouter>
     );
   }
 }
