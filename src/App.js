@@ -15,12 +15,12 @@ class App extends React.Component{
         <div className="App">
           <Navi />
           <Switch>
-            <Route path="/10-pantryraids" exact>
+            <Route path="/" exact>
               <div>
                 <Cards />
               </div>
             </Route>
-            <Route path="/10-pantryraids/About">
+            <Route path="/About">
               <div>
                 <About />
               </div>

@@ -10,7 +10,7 @@ function App() {
         <nav >
             
                 <div className={style.naviItem}>
-                    <Link to="/10-pantryraids">
+                    <Link to="/" exact>
                         <h3>10 Pantry Raids</h3>
                     </Link>
                 </div>
@@ -24,7 +24,7 @@ function App() {
             
             
                 <div className={cx(style.naviItem, style.about)}>
-                    <Link to="/10-pantryraids/about">
+                    <Link to="/about">
                         <p>About</p>
                     </Link>
                 </div>
