@@ -35,9 +35,13 @@ const Cards = ({ input }) => {
         {input.recipe.ingredients.map(ingredient => ( 
           <div className={style.ingredientTag} key={Math.floor((Math.random() * 10000) + 1)}>{ingredient.text}</div>
         )) }
-        <Typography variant="h5">
-          <a href={input.recipe.url} target="_blank" rel="noopener noreferrer">Source</a> 
+        <div className={style.verticalBuffer}>
+        <Typography variant="h6" >
+          <a  className={style.sourceLink} 
+          href={input.recipe.url} target="_blank" rel="noopener noreferrer">
+            Instructions</a> 
         </Typography>
+        </div>
       </CardContent>
     </Grid>
     </div>
