@@ -9,3 +9,9 @@ body{
 .App {
   text-align: center;
 }
+
+.cardWrap{
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 80vw;
+}

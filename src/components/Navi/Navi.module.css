@@ -24,6 +24,7 @@ a {
     text-decoration: none;
 }
 
+
 .naviItem{
     flex-grow: 1;
     
@@ -44,6 +45,6 @@ a {
 }
 
 .navHeightBuffer{
-    min-height: var(--navHeight);
+    min-height: calc(var(--navHeight)*1.2);
     display: block;
 }
