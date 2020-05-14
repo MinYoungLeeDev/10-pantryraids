@@ -2,6 +2,7 @@
     --navHeight: 6vh;
     --tranTime: 200ms;
     --navColor: rgb(12, 45, 59);
+    --searchHeight: 24px;
 }
 
 nav{
@@ -47,4 +48,28 @@ a {
 .navHeightBuffer{
     min-height: calc(var(--navHeight)*1.2);
     display: block;
+}
+
+.outputWrap{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.searchbar{
+    height: var(--searchHeight);
+    font-size: 16px;
+}
+
+.searchButton{
+    height: var(--searchHeight);
+    
+    padding: calc(var(--searchHeight)*.25) var(--searchHeight) calc(var(--searchHeight)*.84) var(--searchHeight);
+}
+
+@media (max-width: 600px){
+    .title{
+        display: none;
+    }
+
 }

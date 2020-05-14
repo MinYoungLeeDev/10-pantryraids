@@ -1,8 +1,9 @@
 import React,{useEffect, useState} from 'react';
 import Cards from '../components/Cards/Cards';
+
 require('dotenv').config();
 
-const App = () =>{
+const App = (props) =>{
   //API Declaration 
   const APP_ID = process.env.REACT_APP_API_ID;
   const APP_KEY = process.env.REACT_APP_API_KEY;
@@ -13,6 +14,7 @@ const App = () =>{
   
   useEffect(() =>{
     getRecipes();
+    
     //When [] changes, useEffect runs 
   }, [query]);
 
@@ -34,6 +36,7 @@ const App = () =>{
   //Flow block for API request until the form is submitted 
   const getSearch = e => {
     e.preventDefault();
+    
     setQuery(search);
     //Reset search 
     setSearch('');

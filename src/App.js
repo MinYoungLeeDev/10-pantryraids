@@ -1,6 +1,5 @@
 import React from 'react';
 import {Navi} from './components';
-import API from './api';
 
 import './App.css';
 
@@ -10,11 +9,6 @@ class App extends React.Component{
     return(
         <div className="App">
           <Navi />
-          <div className="cardWrap">
-            
-              <API />          
-            
-          </div>
         </div>
     );
   }
